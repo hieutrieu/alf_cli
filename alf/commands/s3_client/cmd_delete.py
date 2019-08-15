@@ -1,9 +1,6 @@
 import click
-import logging
 from alf import utils
 from alf.commands.s3_client.s3_client import S3Client
-
-logger = logging.getLogger(__name__)
 
 
 @click.command('delete',
