@@ -1,6 +1,6 @@
-# Datapile command line interface
+# ALF command line interface
 
-Command line interface for Datapile, functions including:
+Command line interface for ALF, functions including:
 
 ```
  Usage: alf [OPTIONS] COMMAND [ARGS]...
