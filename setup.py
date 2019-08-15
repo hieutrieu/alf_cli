@@ -11,6 +11,7 @@ setup(
     packages=['alf', 'alf.commands.s3_client'],
     install_requires=[
         'click',
+        'pathlib',
         'requests'
     ],
     entry_points='''
