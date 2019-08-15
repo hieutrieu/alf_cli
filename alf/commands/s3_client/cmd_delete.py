@@ -14,5 +14,9 @@ def delete(s3_path):
     s3_client = S3Client(aws_access_key_id=utils.get_aws_access_key_id(),
                          aws_secret_access_key=utils.get_aws_secret_access_key(),
                          bucket=utils.get_aws_bucket())
-    s3_client.delete(s3_path)
+
+    files = s3_client.get_files(s3_path)
+    for file in files:
+        s3_client.delete(file)
+        print('Deleted "{}" file'. format(file))
     return 0
